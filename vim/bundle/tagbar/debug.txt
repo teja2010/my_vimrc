@@ -1,0 +1,39 @@
+23:14:56: Checking for Exuberant Ctags
+23:14:56: EscapeCtagsCmd called
+23:14:56: ctags_bin: /home/teja/apps/universal_ctags/usr_local/bin/ctags
+23:14:56: ctags_args (is a string): --version
+23:14:56: Escaped ctags command: '/home/teja/apps/universal_ctags/usr_local/bin/ctags' --version
+23:14:56: Executing ctags command: '/home/teja/apps/universal_ctags/usr_local/bin/ctags' --version
+23:15:00: Calling shell to execute: "('/home/teja/apps/universal_ctags/usr_local/bin/ctags' --version)>/tmp/viMYwvw/0 2>&1"
+23:15:00: Checking Exuberant Ctags version
+23:15:00: Ctags version: major='5', minor='8'
+23:15:00: Getting filetypes sypported by Exuberant Ctags
+23:15:00: EscapeCtagsCmd called
+23:15:00: ctags_bin: /home/teja/apps/universal_ctags/usr_local/bin/ctags
+23:15:00: ctags_args (is a string): --list-languages
+23:15:00: Escaped ctags command: '/home/teja/apps/universal_ctags/usr_local/bin/ctags' --list-languages
+23:15:00: Executing ctags command: '/home/teja/apps/universal_ctags/usr_local/bin/ctags' --list-languages
+23:15:01: Calling shell to execute: "('/home/teja/apps/universal_ctags/usr_local/bin/ctags' --list-languages)>/tmp/viMYwvw/1 2>&1"
+23:15:01: Initializing types
+23:15:01: Initializing user types
+23:15:01: Creating autocommands
+23:15:01: AutoUpdate called [/home/teja/LL/golang/tour.golang.org/conc_threadpool.go]
+23:15:01: Vim filetype: 'go', sanitized filetype: 'go'
+23:15:01: Checking if file is valid [/home/teja/LL/golang/tour.golang.org/conc_threadpool.go]
+23:15:01: Unsupported filetype: go
+23:15:01: Not a valid file, stopping processing
+23:15:19: Checking for Exuberant Ctags
+23:15:19: EscapeCtagsCmd called
+23:15:19: ctags_bin: /home/teja/apps/universal_ctags/usr_local/bin/ctags
+23:15:19: ctags_args (is a string): --version
+23:15:19: Escaped ctags command: '/home/teja/apps/universal_ctags/usr_local/bin/ctags' --version
+23:15:19: Executing ctags command: '/home/teja/apps/universal_ctags/usr_local/bin/ctags' --version
+23:15:23: Calling shell to execute: "('/home/teja/apps/universal_ctags/usr_local/bin/ctags' --version)>/tmp/vCaclPX/0 2>&1"
+23:15:23: Checking Exuberant Ctags version
+23:15:23: Ctags version: major='5', minor='8'
+23:15:23: Getting filetypes sypported by Exuberant Ctags
+23:15:23: EscapeCtagsCmd called
+23:15:23: ctags_bin: /home/teja/apps/universal_ctags/usr_local/bin/ctags
+23:15:23: ctags_args (is a string): --list-languages
+23:15:23: Escaped ctags command: '/home/teja/apps/universal_ctags/usr_local/bin/ctags' --list-languages
+23:15:23: Executing ctags command: '/home/teja/apps/universal_ctags/usr_local/bin/ctags' --list-languages

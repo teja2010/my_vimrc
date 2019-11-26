@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/teja/.vim/bundle/tagbar/autoload'
+let g:netrw_dirhist_1='/home/teja/.vim/bundle/tagbar'
+let g:netrw_dirhist_0='/home/teja/.vim/bundle/tagbar/plugin'
+let g:netrw_dirhist_9='/home/teja/.vim/bundle/tagbar'
+let g:netrw_dirhist_8='/home/teja/.vim/bundle/tagbar/syntax'
+let g:netrw_dirhist_7='/home/teja/.vim/bundle/tagbar'
+let g:netrw_dirhist_6='/home/teja/.vim/bundle/tagbar/plugin'
+let g:netrw_dirhist_5='/home/teja/.vim/bundle/tagbar'
+let g:netrw_dirhist_4='/usr/lib/golang/src/time'
+let g:netrw_dirhist_3='/home/teja/LL/golang/tour.golang.org'
