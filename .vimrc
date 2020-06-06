@@ -251,6 +251,69 @@ autocmd BufEnter *.hpp set ts=8 sts=8 sw=8
 "autocmd BufEnter *.h set ts=4 sts=4 sw=4 expandtab
 "autocmd BufEnter *.h IndentGuidesEnable
 
+"for golang
+autocmd BufEnter *.go inoremap \c <ESC>^i//
+autocmd BufEnter *.go nnoremap \c ^i//<ESC>
+"autocmd BufEnter *.go "inoremap \sc <ESC>^i/*     <--- improve
+"autocmd BufEnter *.go "inoremap \ <ESC>$a*/
+autocmd BufEnter *.go vnoremap \c ^<C-v>I//<ESC>
+   "remove comment
+autocmd BufEnter *.go inoremap \xc <ESC>^xxi
+autocmd BufEnter *.go vnoremap \xc :s/\/\///<CR>
+autocmd BufEnter *.go nnoremap \xc ^xx<ESC>
+autocmd BufEnter *.go set ts=8 sts=8 sw=8
+
+"for java
+"autocmd BufEnter *.java inoremap \c <ESC>^i//
+autocmd BufEnter *.java nnoremap \c ^i//<ESC>
+"autocmd BufEnter *.java "inoremap \sc <ESC>^i/*     <--- improve
+"autocmd BufEnter *.java "inoremap \ <ESC>$a*/
+autocmd BufEnter *.java vnoremap \c ^<C-v>I//<ESC>
+   "remove comment
+autocmd BufEnter *.java inoremap \xc <ESC>^xxi
+autocmd BufEnter *.java vnoremap \xc :s/\/\///<CR>
+autocmd BufEnter *.java nnoremap \xc ^xx<ESC>
+autocmd BufEnter *.java set ts=4 sts=4 sw=4 expandtab
+autocmd BufEnter *.java IndentGuidesEnable
+"folding options
+"vnoremap zz zf
+"inoremap zz <Esc>zai
+"nnoremap zz za
+"inoremap \zB <Esc>vaBzf
+
+autocmd BufEnter *.html set ts=2 sts=2 sw=2 expandtab
+autocmd BufEnter *.html IndentGuidesEnable
+
+"for haskell
+let g:hindent_on_save = 0
+let g:hindent_indent_size = 4
+
+autocmd BufEnter *.hs inoremap \c <ESC>^i-- 
+autocmd BufEnter *.hs nnoremap \c ^i-- <ESC>
+"autocmd BufEnter *.hs "inoremap \sc <ESC>^i/*     <--- improve
+"autocmd BufEnter *.hs "inoremap \ <ESC>$a*/
+autocmd BufEnter *.hs vnoremap \c ^<C-v>I-- <ESC>
+   "remove comment
+autocmd BufEnter *.hs inoremap \xc <ESC>^xxxi
+autocmd BufEnter *.hs vnoremap \xc :s/-- //<CR>:noh<CR>
+autocmd BufEnter *.hs nnoremap \xc ^xxx<ESC>:noh<CR>
+autocmd BufEnter *.hs set ts=4 sts=4 sw=4 expandtab
+autocmd BufEnter *.hs IndentGuidesEnable
+
+
+"for rust
+autocmd BufEnter *.rs inoremap \c <ESC>^i//
+autocmd BufEnter *.rs nnoremap \c ^i//<ESC>
+"autocmd BufEnter *.rs "inoremap \sc <ESC>^i/*     <--- improve
+"autocmd BufEnter *.rs "inoremap \ <ESC>$a*/
+autocmd BufEnter *.rs vnoremap \c ^<C-v>I//<ESC>
+   "remove comment
+autocmd BufEnter *.rs inoremap \xc <ESC>^xxi
+autocmd BufEnter *.rs vnoremap \xc :s/\/\///<CR>
+autocmd BufEnter *.rs nnoremap \xc ^xx<ESC>
+autocmd BufEnter *.rs set ts=4 sts=4 sw=4 expandtab
+autocmd BufEnter *.rs IndentGuidesEnable
+
 "folding options
 "vnoremap zz zf
 "inoremap zz <Esc>zai

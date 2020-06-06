@@ -85,6 +85,16 @@ alias TTTT='cat cscope.TTT | fzf --reverse --color=light -i | tr -d "\n" | xclip
 alias tclip='tr -d "\n" | xclip '
 alias lowlow='nice -n 19 '
 
+alias xargs_etags_a=' ctags -L cscope.files '
+
+alias csk_create='find net/ include/ kernel/ init/  drivers/net/ethernet/mellanox/ -name  "*.[ch]" > cscope.files ; xargs_etags_a ; cscope -bqk ; create_TTT'
+alias csk_cmore='find net/ include/ kernel/ init/ mm/ fs/ lib/ security/ drivers/net/ethernet/mellanox/ drivers/platform/msm/ipa/ drivers/net/ethernet/qualcomm/rmnet/ -name  "*.[ch]" > cscope.files ; xargs_etags_a ; cscope -bqk ; create_TTT'
+alias csk_rebuild='xargs_etags_a ; cscope -bqk ; create_TTT'
+
+alias go_create='find * -name "*.go" > cscope.files;  xargs_etags_a ; find ~/go/src/* -name "*.go" >> cscope.files ; cscope -bqk ; create_TTT '
+alias go_create2='find * -name "*.go" > cscope.files;  xargs_etags_a ;cscope -bqk ; create_TTT '
+alias go_rebuild=' xargs_etags_a ; cscope -bqk ; create_TTT '
+
 alias fetch='find * | peco | tr -d "\n" | xclip '
 alias catz='lolcat '
 alias lolzcat='lolcat -a '
