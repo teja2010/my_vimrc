@@ -12,7 +12,9 @@ Installation
 Using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```vim
+
 Plug 'junegunn/vim-peekaboo'
+
 ```
 
 Usage

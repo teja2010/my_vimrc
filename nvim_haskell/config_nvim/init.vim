@@ -11,6 +11,7 @@ set smartindent
 set autoindent
 "set expandtab
 set colorcolumn=80
+set background=dark
 
 set listchars=tab:\|\ ,trail:~
 set list

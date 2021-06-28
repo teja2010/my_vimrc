@@ -5,6 +5,12 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# don't put duplicate lines or lines starting with space in the history.
+# See bash(1) for more options
+HISTCONTROL=ignoreboth
+# append to the history file, don't overwrite it
+shopt -s histappend
+
 # User specific environment
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
@@ -19,6 +25,11 @@ export PATH
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -52,6 +63,10 @@ alias cs5_rebuild='cat ~/my_include/include.files >> cscope.files ; cs_rebuild'
 alias csk_create='find net/ include/ kernel/ init/  drivers/net/ethernet/mellanox/ -name  "*.[ch]" > cscope.files ; cat cscope.files | xargs etags -a ; cscope -bqk ; create_TTT'
 alias csk_cmore='find net/ include/ kernel/ init/ mm/ fs/ lib/ security/ drivers/net/ethernet/mellanox/ drivers/platform/msm/ipa/ drivers/net/ethernet/qualcomm/rmnet/ -name  "*.[ch]" > cscope.files ; cat cscope.files | xargs etags -a ; cscope -bqk ; create_TTT'
 alias csk_rebuild='cat cscope.files | xargs etags -a ; cscope -bqk ; create_TTT'
+
+alias go_create='find * -name "*.go" > cscope.files;  xargs_etags_a ; find ~/go/src/* -name "*.go" >> cscope.files ; cscope -bk ; create_TTT '
+alias go_create2='find * -name "*.go" > cscope.files;  xargs_etags_a ;cscope -bk ; create_TTT '
+alias go_rebuild=' xargs_etags_a ; cscope -bqk ; create_TTT '
 alias cs_show='cscope -d -p10 '
 alias cs_S='cscope -d -p10 '
 
